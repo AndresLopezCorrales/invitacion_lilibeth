@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Canva con botón fijo</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        iframe {
+            width: 80vw;
+            height: 80vh;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        #botonFinal {
+            margin-top: 20px;
+            background-color: #ff007f;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        #botonFinal:hover {
+            background-color: #ff3399;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <iframe src="https://www.canva.com/design/DAG34NUey5k/c4Ym_0WupDTDQG8TEirbXQ/watch?embed" allowfullscreen
+        loading="lazy">
+    </iframe>
+
+    <button id="botonFinal"
+        onclick="window.open('https://api.whatsapp.com/send?phone=526624489204&text=%C2%A1Hola%F0%9F%8E%89%F0%9F%8E%88!+Confirmo+mi+asistencia+a+la+fiesta+de+Lilibeth+este+s%C3%A1bado+06+de+Diciembre+a+las+02%3A30+pm+en+el+Local+de+Eventos+%22Granjita+movil+y+ponnys+del+desierto%22+ubicado+en+https%3A%2F%2Fmaps.app.goo.gl%2FExfH5evLm4kodrV49+Gracias+por+la+invitaci%C3%B3n%2C+nos+vemos+pronto', '_blank')">
+        Confirmar Asistencia
+    </button>
+
+</body>
+
+</html>
